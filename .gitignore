@@ -1,0 +1,14 @@
+node_modules
+config/.env
+.vscode/launch.json
+uploads/transactions/*.pdf
+uploads/transactions/*.jpg
+uploads/transactions/*.jpeg
+uploads/transactions/*.png
+uploads/transactions/*.gif
+
+uploads/bills/*.pdf
+uploads/bills/*.jpg
+uploads/bills/*.jpeg
+uploads/bills/*.png
+uploads/bills/*.gif
