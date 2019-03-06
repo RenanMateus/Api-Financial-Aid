@@ -169,7 +169,7 @@ function centerRouter() {
         const text = req.query.text;
         const limit = parseInt(req.query.limit, 10) || 5;
         const page = 1;
-
+        //testando os commits
         var _user = req.payload.id;
 
         if(text){
