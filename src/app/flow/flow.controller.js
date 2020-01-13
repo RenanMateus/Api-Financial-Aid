@@ -72,9 +72,9 @@ function flowRouter() {
                     bills = await Bill.find({ dueDate: { $gte: start, $lt: auxDay }, _owner: _user });
 
                     bills.forEach(element => {
-                        if (element.credit && element._conciliation == null) {
+                        if (element.credit && element._conciliation == null && element.ok) {
                             obj.received += element.value;
-                        } else if (!element.credit && element._conciliation == null) {
+                        } else if (!element.credit && element._conciliation == null && element.ok) {
                             obj.payed += element.value;
                         }
                     });
@@ -137,9 +137,9 @@ function flowRouter() {
                     bills = await Bill.find({ dueDate: { $gte: start, $lt: auxDay }, _owner: _user });
 
                     bills.forEach(element => {
-                        if (element.credit && element._conciliation == null) {
+                        if (element.credit && element._conciliation == null && element.ok) {
                             obj.received += element.value;
-                        } else if (!element.credit && element._conciliation == null) {
+                        } else if (!element.credit && element._conciliation == null && element.ok) {
                             obj.payed += element.value;
                         }
                     });
@@ -346,9 +346,9 @@ function flowRouter() {
                     bills = await Bill.find({ dueDate: { $gte: start, $lt: auxDay }, _owner: _user });
 
                     bills.forEach(element => {
-                        if (element.credit && element._conciliation == null) {
+                        if (element.credit && element._conciliation == null && element.ok) {
                             obj.received += element.value;
-                        } else if (!element.credit && element._conciliation == null) {
+                        } else if (!element.credit && element._conciliation == null && element.ok) {
                             obj.payed += element.value;
                         }
                     });
@@ -411,9 +411,9 @@ function flowRouter() {
                     bills = await Bill.find({ dueDate: { $gte: start, $lt: auxDay }, _owner: _user });
 
                     bills.forEach(element => {
-                        if (element.credit && element._conciliation == null) {
+                        if (element.credit && element._conciliation == null && element.ok) {
                             obj.received += element.value;
-                        } else if (!element.credit && element._conciliation == null) {
+                        } else if (!element.credit && element._conciliation == null && element.ok) {
                             obj.payed += element.value;
                         }
                     });
