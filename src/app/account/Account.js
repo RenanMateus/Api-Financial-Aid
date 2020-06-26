@@ -7,8 +7,9 @@ const AccountSchema = new Schema({
     name: {type:String, required:true},
     type: {type:String, enum:[
         'Conta Corrente',
+        'Conta Poupanca',
         'Dinheiro', 
-        'Investimento'
+        'Investimento',
     ],required:true},
     bank: {type:String, required:false, enum: [
         'Banco Bradesco S.A. - 237',
@@ -20,7 +21,10 @@ const AccountSchema = new Schema({
         'Banco Santander Banespa S.A - 033',
         'Banco Santander S.A. - 351',
         'Caixa Econômica Federal - 104',
-        'HSBC Bank Brasil S.A. - Banco Múltiplo - 399'
+        'HSBC Bank Brasil S.A. - Banco Múltiplo - 399',
+        'Banco Inter - 077',
+        'Banco Nubank - 952',
+        'Outro Banco - 999'
     ]},
     agency: {type:String, required:false},
     accountNumber: {type: String, required:false},

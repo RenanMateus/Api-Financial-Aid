@@ -60,7 +60,7 @@ mongoose.Error.messages.Number.max = "O '{VALUE}' informado é maior que o limit
 mongoose.Error.messages.String.enum = "O '{VALUE}' não é válido para o atributo '{PATH}'. "
 
 // useMongoClient: true
-mongoose.connect(`mongodb://localhost/mc_finances`,  (erro, res) => {
+mongoose.connect(`mongodb://localhost/financial_aid`,  (erro, res) => {
     if (erro) throw erro;
     else {
         console.log('Base de Dados conectada!');

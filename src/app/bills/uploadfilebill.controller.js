@@ -13,7 +13,7 @@ const auth	   = require('../service/auth');
 const UploadFile = require('./UploadFileBill');
 const Bill = require('./Bill');
 
-/* Configuração de upload imagem de aeronave */
+/* Configuração de upload imagem */
 const storage = multer.diskStorage({
 	destination: function (req, file, cb) {
 		cb(null, './uploads/bills');
@@ -84,7 +84,7 @@ function UploadBillRouter() {
 		}
 	});
 
-	/* Deletar anexo de aeronave. */
+	/* Deletar anexo. */
 	router.delete('/file-bill/:id', auth, async (req, res) => {
 		try {
 			const _user = req.payload.id;

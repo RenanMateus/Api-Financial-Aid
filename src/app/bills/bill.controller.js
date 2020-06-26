@@ -27,16 +27,12 @@ function billRouter() {
                 payday,
                 installmentTotal,
                 description,
-                forfeit,
-                interestRate,
-                discount,
                 total,
                 _category,
                 docNumber,
                 docDate,
                 _partner,
                 _center,
-                month,
                 observation
             } = req.body;
             
@@ -95,16 +91,12 @@ function billRouter() {
 
                         billInstallment.payday = payday;
                         billInstallment.description = description;
-                        billInstallment.forfeit = forfeit;
-                        billInstallment.interestRate = interestRate;
-                        billInstallment.discount = discount;
                         billInstallment.total = total;
                         billInstallment._category = _category;
                         billInstallment.docNumber = docNumber;
                         billInstallment.docDate = docDate;
                         billInstallment._partner = _partner;
                         billInstallment._center = _center;
-                        billInstallment.month = month;
                         billInstallment.observation = observation;
 
                         billInstallment.installmentTotal = quantidadeMeses;
@@ -126,16 +118,12 @@ function billRouter() {
             bill.dueDate = dueDate;
             bill.payday = payday;
             bill.description = description;
-            bill.forfeit = forfeit;
-            bill.interestRate = interestRate;
-            bill.discount = discount;
             bill.total = total;
             bill._category = _category;
             bill.docNumber = docNumber;
             bill.docDate = docDate;
             bill._partner = _partner;
             bill._center = _center;
-            bill.month = month;
             bill.observation = observation;
 
             bill = await bill.save();
@@ -156,16 +144,12 @@ function billRouter() {
                 dueDate,
                 payday,
                 description,
-                forfeit,
-                interestRate,
-                discount,
                 total,
                 _category,
                 docNumber,
                 docDate,
                 _partner,
                 _center,
-                month,
                 observation
             } = req.body;
             
@@ -179,16 +163,12 @@ function billRouter() {
                 dueDate,
                 payday,
                 description,
-                forfeit,
-                interestRate,
-                discount,
                 total,
                 _category,
                 docNumber,
                 docDate,
                 _partner,
                 _center,
-                month,
                 observation
             }, { new: true });
 

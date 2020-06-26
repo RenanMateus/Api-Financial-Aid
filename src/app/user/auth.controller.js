@@ -11,7 +11,7 @@ const router = express.Router();
 
 function authRouter() {
 
-    router.post('/register', async (req, res) => {        
+    router.post('/register', async (req, res) => {
         const { email, password, name } = req.body;
 
         try {
@@ -31,8 +31,8 @@ function authRouter() {
                 _id: user._id,
                 login: user.login,
                 email: user.email,
-                name: user.name,               
-                token: user.gerarToken(user) 
+                name: user.name,
+                token: user.gerarToken(user)
             });
 
         } catch (error) {

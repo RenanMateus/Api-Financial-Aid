@@ -13,7 +13,7 @@ const auth	   = require('../service/auth');
 const UploadFile = require('./UploadFileTransaction');
 const Transaction = require('./Transaction');
 
-/* Configuração de upload imagem de aeronave */
+/* Configuração de upload imagem */
 const storage = multer.diskStorage({
 	destination: function (req, file, cb) {
 		cb(null, './uploads/transactions');
@@ -84,7 +84,7 @@ function UploadTransactionRouter() {
 		}
 	});
 
-	/* Deletar anexo de aeronave. */
+	/* Deletar anexo. */
 	router.delete('/file-transaction/:id', auth, async (req, res) => {
 		try {
 			const _user = req.payload.id;

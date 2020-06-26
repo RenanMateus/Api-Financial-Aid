@@ -1,5 +1,5 @@
 {
-  "name": "criatech-finances",
+  "name": "finances",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "nodemon index.js",
     "production": "pm2 start index.js --name mc-finances"
   },
-  "author": "Romulo Almeida - Criatech Soluções Ltda",
+  "author": "Renan Mateus < Renan Softwares >",
   "license": "MIT",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",

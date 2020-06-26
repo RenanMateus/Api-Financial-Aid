@@ -235,7 +235,6 @@ function flowRouter() {
                 auxDay.setSeconds(0);
                 auxDay.setMilliseconds(0);
 
-                //aqui
                 do {
 
                     auxDay.setDate(start.getDate() + 1);
@@ -509,7 +508,7 @@ function flowRouter() {
                 auxDay.setSeconds(0);
                 auxDay.setMilliseconds(0);
 
-                //aqui
+
                 do {
 
                     auxDay.setDate(start.getDate() + 1);

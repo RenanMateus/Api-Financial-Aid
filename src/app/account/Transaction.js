@@ -13,7 +13,6 @@ const TransactionSchema = new Schema({
     docNumber: {type:String, required:false},
     _partner: {type:Schema.ObjectId, ref:'Partner', required:false},
     _center: {type:Schema.ObjectId, ref:'Center', required:false},
-    month: {type:Date, required: false},
     _conciliation:{type:Schema.ObjectId, ref:'Conciliation', default:null}
 });
 
