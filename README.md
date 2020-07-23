@@ -4,7 +4,7 @@ Este README descreve os passos necessários para execução da API do FINANCIAL 
 
 ## 1.0 - Configurando o projeto ##
 
-Está API requer que o [Node JS](https://nodejs.org/en/) e [Node Package Manager](https://www.npmjs.com/) (NPM). Caso ainda não tenha instalado siga os passos para instalação [aqui](https://nodejs.org/en/download/). Outro passo importante é ter o [MongoDB](https://www.mongodb.com/download-center#atlas) configurado em sua máquina.
+Está API requer que o [Node JS](https://nodejs.org/en/) e [Node Package Manager](https://www.npmjs.com/) (NPM). Caso ainda não tenha instalado siga os passos para instalação [aqui](https://nodejs.org/en/download/). Outro passo importante é ter o [MongoDB 4.0](https://www.mongodb.com/try/download/community) configurado em sua máquina.
 > O NPM é instalado por padrão com o Node
 
 
